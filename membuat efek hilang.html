@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBUAT EFEK HILANG</title>
+
+    <style>
+        div {
+            margin: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>MEMBUAT EFEK HILANG</h2>
+
+    <div></div>
+
+    <button id="hilang">Hilang</button>
+    <button id="tampil">Tampil</button>
+    <button id="hilangdantampil">HILANG DAN TAMPIL</button>
+
+    <!--jquery-->
+    <script src="DownloadJQUERY.js">
+    </script>
+    <script src="mouse.js"></script> <!--untuk masuk ke file lain -->
+
+    <script>
+        $(document).ready(function () {
+            $("#hilang").click(function (e) { 
+                $("div").hide();
+                
+            });
+
+            $("#tampil").click(function (e) { 
+                $("div").show();
+                
+            });
+
+            $("#hilangdantampil").click(function (e) { 
+               $("div").toggle();
+                
+            });
+        });
+    </script>
+    
+</body>
+</html>

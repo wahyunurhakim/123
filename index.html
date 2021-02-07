@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan jquery</title>
+</head>
+<body>
+    <h1>Pengenalan jquery</h1>
+
+    <P id="PAKEJS"></P>
+    <P id="PAKEjquery"></P>
+
+    <button id="GantiJS">Ganti texk js </button>
+
+    <!--jquery-->
+    <script src="DownloadJQUERY.js"></script>
+
+    <!--JS ASLI-->
+    <script>
+        document.getElementById("PAKEJS").innerHTML="INI DI TULIS PAKE JS ASLI"
+    </script>
+
+    <!--JS Jquery-->
+    <script>
+        $(document).ready(function () {
+            $(PAKEjquery).text("INI DI TULIS MENGGUNAKAN JS JQUERY"); // fungsi ini untuk membuat text
+
+            $(GantiJS).click(function (e) { // untuk membuat sebuah tombol click
+
+                $(PAKEjquery).text("Sekarang YANG ada di jquery akan terganti");
+            });
+        });
+
+    </script>
+
+    
+    
+
+</body>
+</html>
